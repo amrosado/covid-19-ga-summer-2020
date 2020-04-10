@@ -1,0 +1,6 @@
+[*.{js,jsx}]
+charset = utf-8
+
+[src/*.{js,jsx}]
+indent_style = tab
+indent_size = 2

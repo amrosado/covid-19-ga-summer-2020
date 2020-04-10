@@ -1,0 +1,86 @@
+@import './colors.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  color: $forestGreen;
+  background-color: $g16;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  cursor: pointer;
+  &:hover {
+    color: $forestGreen;
+  }
+}
+
+.Container {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.AppContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.ContentContainer {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 8em);
+}
+
+.__nav-items {
+  height: 100%;
+  display: flex;
+  .__nav-text {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .__nav-item-spacer {
+    width: 0.1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .__nav-item-spacer-line {
+      height: 1.2em;
+      width: 0.1em;
+      border-left: 1px #3F3D56 solid;
+    }
+  }
+  .__nav-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 100%;
+    &._middle {
+      margin-left: 4em;
+      margin-right: 4em;
+    }
+    &._current {
+      font-weight: bolder;
+      color: $forestGreen;
+    }
+    &:hover {
+      color: $forestGreen;
+    }
+    &._action {
+      color: $forestGreen;
+    }
+  }
+}
