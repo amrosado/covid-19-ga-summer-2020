@@ -1,8 +1,12 @@
 from flask import Flask
 
+from flask_back_end.api.ApiEndpoints import api_blueprint
+
 app = Flask(__name__)
 
 prod = False
+
+app.register_blueprint(api_blueprint)
 
 @app.route('/')
 def home():
