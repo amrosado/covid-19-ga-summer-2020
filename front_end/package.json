@@ -19,13 +19,15 @@
   "license": "",
   "dependencies": {
     "d3": "latest",
-    "history": "latest",
     "file-saver": "latest",
+    "history": "latest",
+    "immutable": "^4.0.0-rc.12",
     "js-cookie": "latest",
     "normalizr": "latest",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-immutable-proptypes": "^2.2.0",
     "react-router": "latest",
     "react-router-dom": "latest"
   },

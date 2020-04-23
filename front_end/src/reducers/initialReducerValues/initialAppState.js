@@ -1,4 +1,16 @@
-export const initialAppState = {
+import {List, Map } from 'immutable';
+
+export const initialAppState = Map({
+  active_navigation_item: null,
+  navigation_items:
+  List(
+      [
+          Map({
+            name: "Systems",
+            link: "#systems"
+          })
+      ]
+  ),
   scrolledDown: false,
   loggedOn: false,
   topics: [
@@ -15,4 +27,6 @@ export const initialAppState = {
       description: 'General description'
     }
   ]
-}
+});
+
+console.log("initial", initialAppState);

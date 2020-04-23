@@ -53,7 +53,7 @@
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
-    article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    article, aside, figcaption, figure, footer, hgroup, main, nav, section {
         display: block;
     }
 
@@ -2414,7 +2414,7 @@
         }
     }
 
-    .btn {
+    .btn_custom {
         display: inline-block;
         font-weight: 400;
         color: #003057;
@@ -2434,23 +2434,23 @@
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     }
     @media (prefers-reduced-motion: reduce) {
-        .btn {
+        .btn_custom {
             transition: none;
         }
     }
-    .btn:hover {
+    .btn_custom:hover {
         color: #335161;
         text-decoration: none;
     }
-    .btn:focus, .btn.focus {
+    .btn_custom:focus, .btn_custom.focus {
         outline: 0;
         box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
     }
-    .btn.disabled, .btn:disabled {
+    .btn_custom.disabled, .btn_custom:disabled {
         opacity: 0.65;
     }
-    a.btn.disabled,
-    fieldset:disabled a.btn {
+    a.btn_custom.disabled,
+    fieldset:disabled a.btn_custom {
         pointer-events: none;
     }
 
@@ -2912,14 +2912,14 @@
         pointer-events: none;
     }
 
-    .btn-lg, .btn-group-lg > .btn {
+    .btn-lg, .btn-group-lg > .btn_custom {
         padding: 0.5rem 1rem;
         font-size: 1.25rem;
         line-height: 1.5;
         border-radius: 0.3rem;
     }
 
-    .btn-sm, .btn-group-sm > .btn {
+    .btn-sm, .btn-group-sm > .btn_custom {
         padding: 0.25rem 0.5rem;
         font-size: 0.875rem;
         line-height: 1.5;
@@ -3207,19 +3207,19 @@
         display: inline-flex;
         vertical-align: middle;
     }
-    .btn-group > .btn,
-    .btn-group-vertical > .btn {
+    .btn-group > .btn_custom,
+    .btn-group-vertical > .btn_custom {
         position: relative;
         flex: 1 1 auto;
     }
-    .btn-group > .btn:hover,
-    .btn-group-vertical > .btn:hover {
+    .btn-group > .btn_custom:hover,
+    .btn-group-vertical > .btn_custom:hover {
         z-index: 1;
     }
-    .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
-    .btn-group-vertical > .btn:focus,
-    .btn-group-vertical > .btn:active,
-    .btn-group-vertical > .btn.active {
+    .btn-group > .btn_custom:focus, .btn-group > .btn_custom:active, .btn-group > .btn_custom.active,
+    .btn-group-vertical > .btn_custom:focus,
+    .btn-group-vertical > .btn_custom:active,
+    .btn-group-vertical > .btn_custom.active {
         z-index: 1;
     }
 
@@ -3232,17 +3232,17 @@
         width: auto;
     }
 
-    .btn-group > .btn:not(:first-child),
+    .btn-group > .btn_custom:not(:first-child),
     .btn-group > .btn-group:not(:first-child) {
         margin-left: -1px;
     }
-    .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group > .btn-group:not(:last-child) > .btn {
+    .btn-group > .btn_custom:not(:last-child):not(.dropdown-toggle),
+    .btn-group > .btn-group:not(:last-child) > .btn_custom {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
-    .btn-group > .btn:not(:first-child),
-    .btn-group > .btn-group:not(:first-child) > .btn {
+    .btn-group > .btn_custom:not(:first-child),
+    .btn-group > .btn-group:not(:first-child) > .btn_custom {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
@@ -3258,12 +3258,12 @@
         margin-right: 0;
     }
 
-    .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+    .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn_custom + .dropdown-toggle-split {
         padding-right: 0.375rem;
         padding-left: 0.375rem;
     }
 
-    .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+    .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn_custom + .dropdown-toggle-split {
         padding-right: 0.75rem;
         padding-left: 0.75rem;
     }
@@ -3273,33 +3273,33 @@
         align-items: flex-start;
         justify-content: center;
     }
-    .btn-group-vertical > .btn,
+    .btn-group-vertical > .btn_custom,
     .btn-group-vertical > .btn-group {
         width: 100%;
     }
-    .btn-group-vertical > .btn:not(:first-child),
+    .btn-group-vertical > .btn_custom:not(:first-child),
     .btn-group-vertical > .btn-group:not(:first-child) {
         margin-top: -1px;
     }
-    .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
-    .btn-group-vertical > .btn-group:not(:last-child) > .btn {
+    .btn-group-vertical > .btn_custom:not(:last-child):not(.dropdown-toggle),
+    .btn-group-vertical > .btn-group:not(:last-child) > .btn_custom {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
-    .btn-group-vertical > .btn:not(:first-child),
-    .btn-group-vertical > .btn-group:not(:first-child) > .btn {
+    .btn-group-vertical > .btn_custom:not(:first-child),
+    .btn-group-vertical > .btn-group:not(:first-child) > .btn_custom {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
 
-    .btn-group-toggle > .btn,
-    .btn-group-toggle > .btn-group > .btn {
+    .btn-group-toggle > .btn_custom,
+    .btn-group-toggle > .btn-group > .btn_custom {
         margin-bottom: 0;
     }
-    .btn-group-toggle > .btn input[type=radio],
-    .btn-group-toggle > .btn input[type=checkbox],
-    .btn-group-toggle > .btn-group > .btn input[type=radio],
-    .btn-group-toggle > .btn-group > .btn input[type=checkbox] {
+    .btn-group-toggle > .btn_custom input[type=radio],
+    .btn-group-toggle > .btn_custom input[type=checkbox],
+    .btn-group-toggle > .btn-group > .btn_custom input[type=radio],
+    .btn-group-toggle > .btn-group > .btn_custom input[type=checkbox] {
         position: absolute;
         clip: rect(0, 0, 0, 0);
         pointer-events: none;
@@ -3370,23 +3370,23 @@
     .input-group-append {
         display: flex;
     }
-    .input-group-prepend .btn,
-    .input-group-append .btn {
+    .input-group-prepend .btn_custom,
+    .input-group-append .btn_custom {
         position: relative;
         z-index: 2;
     }
-    .input-group-prepend .btn:focus,
-    .input-group-append .btn:focus {
+    .input-group-prepend .btn_custom:focus,
+    .input-group-append .btn_custom:focus {
         z-index: 3;
     }
-    .input-group-prepend .btn + .btn,
-    .input-group-prepend .btn + .input-group-text,
+    .input-group-prepend .btn_custom + .btn_custom,
+    .input-group-prepend .btn_custom + .input-group-text,
     .input-group-prepend .input-group-text + .input-group-text,
-    .input-group-prepend .input-group-text + .btn,
-    .input-group-append .btn + .btn,
-    .input-group-append .btn + .input-group-text,
+    .input-group-prepend .input-group-text + .btn_custom,
+    .input-group-append .btn_custom + .btn_custom,
+    .input-group-append .btn_custom + .input-group-text,
     .input-group-append .input-group-text + .input-group-text,
-    .input-group-append .input-group-text + .btn {
+    .input-group-append .input-group-text + .btn_custom {
         margin-left: -1px;
     }
 
@@ -3427,8 +3427,8 @@
     .input-group-lg > .custom-select,
     .input-group-lg > .input-group-prepend > .input-group-text,
     .input-group-lg > .input-group-append > .input-group-text,
-    .input-group-lg > .input-group-prepend > .btn,
-    .input-group-lg > .input-group-append > .btn {
+    .input-group-lg > .input-group-prepend > .btn_custom,
+    .input-group-lg > .input-group-append > .btn_custom {
         padding: 0.5rem 1rem;
         font-size: 1.25rem;
         line-height: 1.5;
@@ -3444,8 +3444,8 @@
     .input-group-sm > .custom-select,
     .input-group-sm > .input-group-prepend > .input-group-text,
     .input-group-sm > .input-group-append > .input-group-text,
-    .input-group-sm > .input-group-prepend > .btn,
-    .input-group-sm > .input-group-append > .btn {
+    .input-group-sm > .input-group-prepend > .btn_custom,
+    .input-group-sm > .input-group-append > .btn_custom {
         padding: 0.25rem 0.5rem;
         font-size: 0.875rem;
         line-height: 1.5;
@@ -3457,21 +3457,21 @@
         padding-right: 1.75rem;
     }
 
-    .input-group > .input-group-prepend > .btn,
+    .input-group > .input-group-prepend > .btn_custom,
     .input-group > .input-group-prepend > .input-group-text,
-    .input-group > .input-group-append:not(:last-child) > .btn,
+    .input-group > .input-group-append:not(:last-child) > .btn_custom,
     .input-group > .input-group-append:not(:last-child) > .input-group-text,
-    .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+    .input-group > .input-group-append:last-child > .btn_custom:not(:last-child):not(.dropdown-toggle),
     .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
 
-    .input-group > .input-group-append > .btn,
+    .input-group > .input-group-append > .btn_custom,
     .input-group > .input-group-append > .input-group-text,
-    .input-group > .input-group-prepend:not(:first-child) > .btn,
+    .input-group > .input-group-prepend:not(:first-child) > .btn_custom,
     .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
-    .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+    .input-group > .input-group-prepend:first-child > .btn_custom:not(:first-child),
     .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -4674,7 +4674,7 @@
         display: none;
     }
 
-    .btn .badge {
+    .btn_custom .badge {
         position: relative;
         top: -1px;
     }
@@ -9869,7 +9869,7 @@
             box-shadow: none !important;
         }
 
-        a:not(.btn) {
+        a:not(.btn_custom) {
             text-decoration: underline;
         }
 
@@ -9979,8 +9979,28 @@
         margin-bottom: 4rem;
     }
 
+    section #identity {
+        padding: 0 0 0 0 !important;
+    }
+
+    div .region-spotlight {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+
+
     @media (min-width: 768px) {
-        section {
+        section #background {
+            padding: 9rem 0;
+        }
+        section #outreach {
+            padding: 9rem 0;
+        }
+        section #research {
+            padding: 9rem 0;
+        }
+        section #gtwide {
             padding: 9rem 0;
         }
     }
@@ -10093,7 +10113,7 @@
             margin-right: 0;
         }
     }
-    header.masthead {
+    section.masthead2 {
         padding-top: 10.5rem;
         padding-bottom: 6rem;
         text-align: center;
@@ -10104,19 +10124,19 @@
         background-position: center center;
         background-size: cover;
     }
-    header.masthead .container{
+    section.masthead2 .container{
         padding: 2em 2em 2em 2em;
         border-radius: 2em;
         background-color: rgba(255, 255, 255, 0.5)
     }
-    header.masthead .masthead-subheading {
+    section.masthead2 .masthead2-subheading {
         font-size: 1.5rem;
         font-style: italic;
         line-height: 1.5rem;
         margin-bottom: 25px;
         font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }
-    header.masthead .masthead-heading {
+    section.masthead2 .masthead2-heading {
         font-size: 3.25rem;
         font-weight: 700;
         line-height: 3.25rem;
@@ -10125,17 +10145,17 @@
     }
 
     @media (min-width: 768px) {
-        header.masthead {
+        header.masthead2 {
             padding-top: 17rem;
             padding-bottom: 12.5rem;
         }
-        header.masthead .masthead-subheading {
+        header.masthead2 .masthead2-subheading {
             font-size: 2.25rem;
             font-style: italic;
             line-height: 2.25rem;
             margin-bottom: 2rem;
         }
-        header.masthead .masthead-heading {
+        header.masthead2 .masthead2-heading {
             font-size: 4.5rem;
             font-weight: 700;
             line-height: 4.5rem;
@@ -10467,8 +10487,8 @@
         font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }
 </style>
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+
+<nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
     <div class="container">
         <!--<a class="navbar-brand js-scroll-trigger" href="#page-top"></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>-->
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -10481,14 +10501,13 @@
         </div>
     </div>
 </nav>
-<!-- Masthead-->
-<header class="masthead">
+<section class="masthead2">
     <div class="container">
-        <div class="masthead-subheading">Addressing pandemic modeling challenges.</div>
-        <div class="masthead-heading text-uppercase">COVID-19 Microdynamics Resources</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#background">Read Background</a>
+        <div class="masthead2-subheading">Addressing pandemic modeling challenges.</div>
+        <div class="masthead2-heading text-uppercase">COVID-19 Microdynamics Resources</div>
+        <a class="btn_custom btn-primary btn-xl text-uppercase js-scroll-trigger" href="#background">Read Background</a>
     </div>
-</header>
+</section>
 <!-- Services-->
 <section class="page-section bg-light" id="background">
     <div class="container">
@@ -10661,43 +10680,43 @@
             <ul class="list-group">
                 <li class="list-group-item">
                     <a href="https://cos.gatech.edu/news/meet-georgia-tech-marine-biologist-creating-covid-19-test-kit-ingredients">Meet the Marine Biologist Helping Create COVID-19 Test Kits</a>
-                    <p>Samantha Mascuch is creating ingredients for coronavirus test kits. Learn how the test works, and how a team of Georgia Tech biologists and chemists are producing thousands of kits.</p>
+                    <p class="text-left">Samantha Mascuch is creating ingredients for coronavirus test kits. Learn how the test works, and how a team of Georgia Tech biologists and chemists are producing thousands of kits.</p>
                 </li>
                 <li class="list-group-item">
                     <a href="https://youtu.be/arJcDNnQHIQ">Nonlinear Science Seminar: Dynamics of COVID-19: Near- and Long-Term Challenges</a>
-                    <p>In this one-hour talk, Joshua Weitz provides background on foundational concepts of disease dynamics, and perspectives on near- and long-term challenges related to the pandemic spread and potential control of COVID-19.</p>
+                    <p class="text-left">In this one-hour talk, Joshua Weitz provides background on foundational concepts of disease dynamics, and perspectives on near- and long-term challenges related to the pandemic spread and potential control of COVID-19.</p>
                 </li>
                 <li class="list-group-item">
                     <a href="https://youtu.be/gtuYiDDd4PM">Chemistry and Biochemistry Present: COVID-19 Research and Response Efforts</a>
-                    <p>In this 1.5-hour talk with Q&A, M.G. Finn and Loren Williams provide research insights and updates related to the COVID-19 response by the School of Chemistry and Biochemistry.</p>
+                    <p class="text-left">In this 1.5-hour talk with Q&A, M.G. Finn and Loren Williams provide research insights and updates related to the COVID-19 response by the School of Chemistry and Biochemistry.</p>
                 </li>
                 <li class="list-group-item">
                     <a href="https://cos.gatech.edu/news/keeping-connected-science-stay-home-journal-club">Keeping Connected with Science: The Stay at Home Journal Club</a>
-                    <p>Read how Jennifer Leavey’s videos use research articles to build personal contact and educate online communities about COVID-19 research, then watch the latest #SAHJC episodes.</p>
+                    <p class="text-left">Read how Jennifer Leavey’s videos use research articles to build personal contact and educate online communities about COVID-19 research, then watch the latest #SAHJC episodes.</p>
                 </li>
                 <li class="list-group-item">
                     <a href="https://news.gatech.edu/2020/04/14/will-smartphones-help-us-keep-covid-19-under-control">Will Smartphones Help Us Keep COVID-19 Under Control?</a>
-                    <p>Read how Jennifer Leavey’s videos use research articles to build personal contact and educate online communities about COVID-19 research, then watch the latest #SAHJC episodes.</p>
+                    <p class="text-left">Read how Jennifer Leavey’s videos use research articles to build personal contact and educate online communities about COVID-19 research, then watch the latest #SAHJC episodes.</p>
                 </li>
                 <li class="list-group-item">
                     <a href="https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(20)30136-4/fulltext">The Case For DIY Masks to Slow Coronavirus’ Spread</a>
-                    <p>If coughing in your sleeve is effective, face masks must be, too, and successes in Asia and Europe corroborate this, says physicist Walt de Heer.</p>
+                    <p class="text-left">If coughing in your sleeve is effective, face masks must be, too, and successes in Asia and Europe corroborate this, says physicist Walt de Heer.</p>
                 </li>
                 <li class="list-group-item">
                     <a href="https://www.designworldonline.com/hack-the-crisis-georgia-tech-works-to-scale-production-of-needed-medical-supplies/">COVID-19 and Risks to The Supply and Quality of Tests, Drugs, and Vaccines</a>
-                    <p>Facundo Fernández is co-author of a recent letter in The Lancet, which stresses that "interventions are needed globally to ensure access to safe, quality assured, and effective medical products on which the world's population will depend."</p>
+                    <p class="text-left">Facundo Fernández is co-author of a recent letter in The Lancet, which stresses that "interventions are needed globally to ensure access to safe, quality assured, and effective medical products on which the world's population will depend."</p>
                 </li>
                 <li class="list-group-item">
                     <a href="https://www.designworldonline.com/hack-the-crisis-georgia-tech-works-to-scale-production-of-needed-medical-supplies/">Hack the Crisis: Georgia Tech Works to Scale Production of Needed Medical Supplies</a>
-                    <p>Using 3D-printed parts, plastic-lined tablecloths intended for birthday parties, laser-cut gears, and similar substitutions, a research team from universities on two continents is racing to develop “do-it-yourself” healthcare gear that can be assembled where it’s needed from components available locally.</p>
+                    <p class="text-left">Using 3D-printed parts, plastic-lined tablecloths intended for birthday parties, laser-cut gears, and similar substitutions, a research team from universities on two continents is racing to develop “do-it-yourself” healthcare gear that can be assembled where it’s needed from components available locally.</p>
                 </li>
                 <li class="list-group-item">
                     <a href="https://news.gatech.edu/2020/04/06/filtration-engineers-offer-advice-do-it-yourself-face-masks/">Filtration Engineers Offer Advice on Do-It-Yourself Face Masks</a>
-                    <p>The continuing shortage of face masks and new recommendations on their use by the general public have led many to make their own masks using available materials. While homemade protection as simple as scarves and bandanas can be helpful, there are ways to optimize the benefit of do-it-yourself personal protective equipment (PPE).</p>
+                    <p class="text-left">The continuing shortage of face masks and new recommendations on their use by the general public have led many to make their own masks using available materials. While homemade protection as simple as scarves and bandanas can be helpful, there are ways to optimize the benefit of do-it-yourself personal protective equipment (PPE).</p>
                 </li>
                 <li class="list-group-item">
                     <a href="https://news.gatech.edu/2020/03/31/truckloads-personal-protection-equipment-donated-healthcare-workers">Truckloads of Personal Protection Equipment Donated for Healthcare Workers</a>
-                    <p>Labs across campus pulled together items that healthcare workers will be able to use as they diagnose and treat COVID-19. Thousands of items that are in short supply for healthcare workers are now being dispatched across the state.</p>
+                    <p class="text-left">Labs across campus pulled together items that healthcare workers will be able to use as they diagnose and treat COVID-19. Thousands of items that are in short supply for healthcare workers are now being dispatched across the state.</p>
                 </li>
             </ul>
         </div>
@@ -10708,7 +10727,7 @@
         <div class="row align-items-center">
             <div class="col-lg-4 text-lg-left">Copyright © GT Center for Microbial Dynamics and Infection 2020</div>
             <div class="col-lg-4 my-3 my-lg-0">
-                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn_custom btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn_custom btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn_custom btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="col-lg-4 text-lg-right"><a class="mr-3" href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div>
         </div>
