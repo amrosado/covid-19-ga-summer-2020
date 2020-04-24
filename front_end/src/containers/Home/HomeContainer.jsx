@@ -7,7 +7,7 @@ import Home from '../../components/Home/Home';
 
 import home from '../../reducers/home';
 
-import {initialHomeState} from "../../reducers/initialReducerValues/initialHomeState";
+import {initialHomeState} from "../../reducers/initial_reducer_values/initialHomeState";
 
 import { AppContext } from '../../contexts/AppContext';
 
@@ -20,7 +20,7 @@ function HomeContainer(props){
   
   return(
     <HomeContext.Provider value={useReducer(home, initialHomeState)}>
-      <Home navigation_items={navigation_items}/>
+ {/*     <Home navigation_items={navigation_items}/>*/}
     </HomeContext.Provider>
   )
 }

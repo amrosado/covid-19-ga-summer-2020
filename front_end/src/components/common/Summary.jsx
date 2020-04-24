@@ -2,16 +2,8 @@ import React, { useContext } from 'react';
 
 import ImmutablePropTypes from 'react-immutable-proptypes';
 
-import * as AppActions from '../../actions/appActions';
-
-import PropTypes from 'prop-types';
-
-import {AppContext} from "../../contexts/AppContext";
-
 function Summary(props){
     const {summary_id, summary_name, summary_subheading, summary_items } = props;
-
-    console.log("Summary", summary_items);
 
     return(
         <section className="page-section" id={summary_id}>

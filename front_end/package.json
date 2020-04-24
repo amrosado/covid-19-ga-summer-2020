@@ -18,6 +18,7 @@
   "author": "Aaron Rosado",
   "license": "",
   "dependencies": {
+    "chart.js": "^2.9.3",
     "d3": "latest",
     "file-saver": "latest",
     "history": "latest",

@@ -2,7 +2,7 @@ import React, {useReducer} from "react";
 import ReactDom from "react-dom";
 import { router } from "./router.jsx";
 import app from './reducers/app';
-import {initialAppState} from "./reducers/initialReducerValues/initialAppState";
+import {initialAppState} from "./reducers/initial_reducer_values/initialAppState";
 
 import * as AppActionTypes from './actions/appActions';
 

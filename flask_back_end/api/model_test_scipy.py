@@ -82,6 +82,6 @@ while r.successful() and r.t < t1:
 	t[count] = r.t
 	count+=1
 
-plt.plot(t, y[50:60])
+plt.plot(t, y[50:60:])
 plt.legend()
 plt.show()

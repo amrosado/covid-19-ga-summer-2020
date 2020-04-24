@@ -1,0 +1,1 @@
+export const UPDATE_RISK_POINT = "UPDATE_RISK_POINT";
